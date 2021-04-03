@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+}
+.header {
+    background-color: #F54B64;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    top: 0;
+}
+.header__img{
+    width: 200px;
+    margin-left: 30px;
+}
+.login {
+    background: linear-gradient(#F54B64,#F78361);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    min-height: calc(100vh - 200px);
+}
+.login__container {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    /* Truco brutal para espaciar toda la seccion */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label {
+    font-size: 14px;
+}
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me a {
+color: white;
+font-size: 14px;
+text-decoration: none;
+}
+.login__container--remember-me a:hover { /* Cuando pongo el mouse sobre "Olvide mi contraseña" se pone la linea */
+    text-decoration: underline;
+}
+.login__container--social-media > div { /* Coge todos los divs del social media */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.login__container--social-media > div > img  { /* Coge todas las imagenes que esten dentro de todos los divs */
+    width: 20px;
+    margin-right: 10px;
+}
+.login__container--register {
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.login__container--register a {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+.input {
+    background-color: transparent;
+    border-left:0px ;
+    border-top:0px ;
+    border-right:0px;
+    border-bottom: 2px solid white;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    outline: none; /* Cuando presiono el input para que no aparesca el recuadro azul */
+    height: 50px;
+}
+::placeholder {
+    color: white;
+}
+.button {
+    font-family: 'Muli', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    height: 50px;
+    border:none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px; /* Coloca espacio entre las letras */
+    margin: 10px 0;
+}
+.footer{
+    background-color: #F78361;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration:underline;
+}
+.login__container a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+.login__container a:hover {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: underline;
+}
